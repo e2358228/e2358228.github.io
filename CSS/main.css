@@ -1,12 +1,137 @@
 @charset "utf-8";
 
+/* 全てのページ */
+
 
 *{
+    font-family: serif;   
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin: 0 8px 0 0;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    padding: 10px 4px;
+
+    background: linear-gradient(#FFF, #00ffe1);
+
+}
+
+body{
+    font-size: 17px;
+}
+
+h1{
+    color: #5d0ae3;
+    font-family: sans-serif;
+    background-color: rgb(105, 229, 231);
+}
+
+.table{
+    border-top:2px solid rgba(20, 31, 111, 0.805); 
+    border-right:2px solid rgba(20, 31, 111, 0.805);
+    border-bottom: 2px solid rgba(20, 31, 111, 0.805);
+    border-left:2px solid rgba(20, 31, 111, 0.805);
     text-align: center;
-    
 }
 
-main{
-    font-size: 25px;
+table > tbody > tr > th{
+    border: 1px double blue;
+}
+
+table > tbody > tr > td{
+    border: 1px dashed red;
+    border-radius: 8px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "header-A header-A"
+        "main-A aside-A"
+        "footer-A footer-A" 
+        ;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+header {
+    background: rgb(101, 176, 203);
+    grid-area: header-A;
+}
+
+main {
+    display: grid;
+    padding: 0 8px;
+    grid-area: main-A;
+}
+
+aside {
+    padding: 0 8px;
+    background: rgba(127, 229, 242, 0.582);
+    grid-area: aside-A;
 
 }
+
+aside > div > ul{
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    background: #aaa;
+    grid-area: footer-A;
+}
+
+h2:hover{
+    font-size: 3rem;
+}
+
+[href]{
+    color: rgb(9, 136, 255);
+}
+[href]:visited{
+    color: rgb(255, 9, 255);
+}
+
+/* arukou */
+.arukou-image{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 10px;
+}
+
+
+/* debate */
+#dnetcontent{
+    background-position: center;
+    background-image: url(/kadai2/D-Net/logo.png);
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+.whatdebate{
+    text-align: center;
+} 
+
+dd > p{
+    line-height: 48px;
+    text-align: right;
+}
+
+.square{
+    border:2px dashed#918d8d;
+}
+
+main > div > ol::first-line{
+    font-size: 2rem;
+    background: gold;
+}
+
+
+
+

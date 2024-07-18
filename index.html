@@ -3,60 +3,176 @@
 
 <head>
 
-    <!-- charest属性：ファイルの文字コード -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- name="author" | ページ作成者-->
     <meta name="atuhor" content="Nomura Masayuki">
 
-    <!-- name="keywords":ページ内容を表すキーワード（３～５くらい）-->
-    <meta name="keyword" content="css">
+    <meta name="keyword" content="html, css, JavaScript">
 
-    <!-- 読み込むCSSの指定、CSSファイルのパスは相対パスで記述する -->
     <link rel="stylesheet" href="./CSS/main.css">
 
-    <title>じゃんけんプログラムJavascript</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
+
+
+
+
+    <title>私のクラブ活動</title>
 </head>
 
 <body>
     <div class="container">
-
-        <!-- header: サイト共通のヘッダー情報（サイトタイトルとかナビゲーション）-->
         <header>
 
-            <h1 class=" " id="top">じゃんけんプログラム</h1>
+            <h1>私のクラブ活動</h1>
 
-            <!--nav:他のページへのリンクや、ページ内リンクをまとめたもの-->
-            
+            <nav id="menu">
+                <ul>
+                    <li><a href="./index.html">ホーム</a></li>
+                    <li><a href="#">タグリファレンス</a></li>
+                    <li><a href="#">問い合わせ</a></li>
+                </ul>
+            </nav>
 
         </header>
 
         <main>
-            <section>
-                <h2>手を選択してね！</h2>
 
-                <button type="button" onclick="janken(0)" >グー</button>
-                <button type="button" onclick="janken(1)" >チョキ</button>
-                <button type="button" onclick="janken(2)" >パー</button>
 
-                <p id="janken">結果は・・・？</p>
-            </section>
-            </section>
+            <div>
+                <section>
+                    <a href="./arukou.html">
+                        <h2>体育局：歩こう会</h2>
+                    </a>
+                    <h3>概要</h3>
+                    <dl>
+                        <dt>活動内容</dt>
+
+                        <dd>
+                            歩こう会は登山を中心としたアウトドアの部活です。
+                            このページでは山の写真を用いて山行の記録を見ることが出来ます。
+                        </dd>
+
+                        <dt>役職</dt>
+
+                        <dd>
+                            部活執行として会計を担当しています。
+                        </dd>
+
+
+
+                    </dl>
+                </section>
+
+                <section>
+                    <a href="./debate.html">
+                        <h2>学術局：Debate Network</h2>
+                    </a>
+                    <h3>概要</h3>
+                    <dl>
+                        <dt>活動内容</dt>
+
+                        <dd>
+                            競技ディベートを行う団体です。
+                            このページでは試合の結果を確認することができます。
+                        </dd>
+
+                        <dt>役職</dt>
+
+                        <dd>
+                            部活執行として部長を担当しています。
+                        </dd>
+
+
+
+                    </dl>
+                </section>
+
+
+            </div>
+
+            <table class="table">
+                <caption>活動日程</caption>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <th></th>
+                        <th>活動日数</th>
+                        <th>活動曜日</th>
+
+                    </tr>
+
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th>歩こう会</th>
+                        <td>週2</td>
+                        <td>火、金</td>
+
+                    </tr>
+                    <tr>
+                        <th>D-Net</th>
+                        <td>週1</td>
+                        <td>金</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+            
+
+
+
+
         </main>
 
+        <aside>
+            <h2>サイドバー</h2>
+            <div>
+                <h3>体育局：歩こう会</h3>
+                <ul>
+                    <!-- 同一タブでリンクを開く -->
+                    <li><a href="./arukou.html">歩こう会 Page top</a></li>
+                    <li><a href="./arukou.html#imgshinkan">新歓合宿</a></li>
+                    <li><a href="./arukou.html#imgnatsuyobi">夏予備合宿</a></li>
+                    <li><a href="./arukou.html#imgshinkyou">新強合宿</a></li>
+                   
+                </ul>
 
-    <!-- footer:フッター情報（コピーライトとか）-->
+                <h3>学術局：Debate Network</h3>
+                <ul>
+                    <!-- 相対パスでリンクさせたいページを指定する -->
+                    <li><a href="./debate.html">D-Net Page top</a></li>
+                
+                </ul>
+
+            </div>
+
+        </aside>
+
+
         <footer>
             Copyright &copy; Nomura Masayuki, ALL Rights Reserved
+            <a href="#top">
+                <p>トップに戻る</p>
+            </a>
         </footer>
+
+ 
     </div>
 
-
-
-
-    <!-- 外部のJavascriptファイルを読み込む場合 -->
-    <script src="./js/main.js"></script>
-
-
 </body>
+
+</html>
